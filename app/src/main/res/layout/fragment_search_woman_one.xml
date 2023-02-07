@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchWomanOneVM" type="com.syedzulqarnainsapplication.app.modules.searchwomanone.data.viewmodel.SearchWomanOneVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnheading"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearItems"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearDatacard"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumntex"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <RadioButton
+                            android:buttonTint="@color/teal_400"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbTex"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_18pxh"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_2pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_search_by_vr_id"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_search_by_vr_id"/>
+                        <EditText
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_400_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_1234"
+                            android:id="@+id/etZipcode"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_12pxv"
+                            android:singleLine="true"
+                            android:text="@={searchWomanOneVM.searchWomanOneModel.etZipcodeValue}"
+                            android:textColorHint="@color/bluegray_900"
+                            style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnSearch"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_40pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="@dimen/_106pxh"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:paddingEnd="@dimen/_24pxh"
+                            android:paddingStart="@dimen/_24pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_search"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_search"/>
+                        <RadioButton
+                            android:buttonTint="@color/gray_500"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbText"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_24pxv"
+                            android:layout_marginEnd="@dimen/_18pxh"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_2pxv"
+                            android:singleLine="true"
+                            android:text="@string/msg_search_by_detai"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/msg_search_by_detai"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearCard"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_100"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_1_profile_found"
+                    android:id="@+id/etHeading" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@={searchWomanOneVM.searchWomanOneModel.etHeadingValue}"
+                    android:textColorHint="@color/bluegray_900"
+                    style="@style/etSolid" tools:ignore="Autofill"/>
+                <ImageView android:id="@+id/imageIllustrationsw"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_84pxh"
+                    android:layout_marginEnd="@dimen/_57pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="@dimen/_134pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_illustrationsw"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_illustrationsw"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNoProfileFoun"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_57pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{searchWomanOneVM.searchWomanOneModel.txtNoProfileFoun}"
+                    style="@style/txtIntersemibold14" tools:text="@string/msg_no_profile_foun"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtNoprofilematc"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginEnd="@dimen/_57pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{searchWomanOneVM.searchWomanOneModel.txtNoprofilematc}"
+                    style="@style/txtInterregular12" tools:text="@string/msg_no_profile_matc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

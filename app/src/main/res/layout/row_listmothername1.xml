@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmothername1RowModel" type="com.syedzulqarnainsapplication.app.modules.childtaskfocused.data.model.Listmothername1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.65" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMotherName"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmothername1RowModel.txtMotherName}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_mother_name"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtShaziaAli"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listmothername1RowModel.txtShaziaAli}"
+                style="@style/txtInterregular14_2" tools:text="@string/lbl_shazia_ali"/>
+        </LinearLayout>
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineDividerTwo"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_weight="0.0" android:layout_width="0dp"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_68pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.35" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMotherVRID"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmothername1RowModel.txtMotherVRID}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_mother_vr_id"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAG584901"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmothername1RowModel.txtAG584901}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_ag584901"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

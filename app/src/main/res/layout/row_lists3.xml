@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="lists3RowModel" type="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyone.data.model.Lists3RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRows"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtS"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtS}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_s"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtM"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.19" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtM}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_m"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtT"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtT}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_t"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtW"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.21" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtW}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_w"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtTOne}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_t"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtF"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtF}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_f"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{lists3RowModel.txtSOne}"
+            style="@style/txtNotoSansmedium12_1" tools:text="@string/lbl_s"/>
+    </LinearLayout>
+</layout>

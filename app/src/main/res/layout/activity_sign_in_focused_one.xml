@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signInFocusedOneVM" type="com.syedzulqarnainsapplication.app.modules.signinfocusedone.data.viewmodel.SignInFocusedOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSigninfocus"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <ImageView android:id="@+id/imageLogovital"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_width="@dimen/_132pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_logovital}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_logovital"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearContainer"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSignIn"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{signInFocusedOneVM.signInFocusedOneModel.txtSignIn}"
+                style="@style/txtIntersemibold16" tools:text="@string/lbl_sign_in"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_name"
+                android:id="@+id/textInputLayText"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter"
+                    android:id="@+id/etText" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={signInFocusedOneVM.signInFocusedOneModel.etTextValue}"
+                    android:textColor="@color/bluegray_900"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14pxh"
+                    android:textStyle="normal" tools:text="@string/lbl_vaccinator2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <FrameLayout android:id="@+id/frameStackblockinformati"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_280pxh">
+                <LinearLayout android:id="@+id/linearField"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_1">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBlockinformati"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_weight="0.69"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{signInFocusedOneVM.signInFocusedOneModel.txtBlockinformati}"
+                        style="@style/txtInterregular6" tools:text="@string/lbl"/>
+                    <ImageView android:id="@+id/imageEye"
+                        android:layout_height="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_183pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_eye"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_eye"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabelOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_2pxv"
+                    android:paddingEnd="@dimen/_8pxh"
+                    android:paddingStart="@dimen/_8pxh"
+                    android:paddingTop="@dimen/_1pxv"
+                    android:singleLine="true"
+                    android:text="@{signInFocusedOneVM.signInFocusedOneModel.txtLabelOne}"
+                    style="@style/txtSolid" tools:text="@string/lbl_password"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSignInOne"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24pxh"
+                android:layout_marginVertical="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_in2"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_sign_in2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

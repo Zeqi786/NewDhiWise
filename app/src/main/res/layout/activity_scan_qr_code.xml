@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="scanQrCodeVM" type="com.syedzulqarnainsapplication.app.modules.scanqrcode.data.viewmodel.ScanQrCodeVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearScanQRcode"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnScanQrCode"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv" android:singleLine="true"
+            android:text="@string/lbl_scan_qr_code"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_scan_qr_code"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnsuccessfullyScanned"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_184pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSuccessfullyScanned"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_18pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_successfully_sc"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/msg_successfully_sc"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumntext"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_9">
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtText"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_26pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{scanQrCodeVM.scanQrCodeModel.txtText}"
+                        style="@style/txtInterregular14" tools:text="@string/msg_qr_code_was_suc"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTextleft"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_27pxv"
+                        android:layout_marginEnd="@dimen/_26pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_30pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{scanQrCodeVM.scanQrCodeModel.txtTextleft}"
+                        android:textAllCaps="true"
+                        style="@style/txtIntersemibold14_2" tools:text="@string/lbl_okay"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

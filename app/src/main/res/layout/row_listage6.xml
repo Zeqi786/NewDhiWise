@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listage6RowModel" type="com.syedzulqarnainsapplication.app.modules.childprofileone.data.model.Listage6RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.75" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtAge"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listage6RowModel.txtAge}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_age"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDuration"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listage6RowModel.txtDuration}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_2_years"/>
+        </LinearLayout>
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineDivider"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_weight="0.01" android:layout_width="0dp"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_99pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.24" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGender"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listage6RowModel.txtGender}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_gender"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGenderOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listage6RowModel.txtGenderOne}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_female"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

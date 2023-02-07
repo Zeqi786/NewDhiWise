@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signInFocusedVM" type="com.syedzulqarnainsapplication.app.modules.signinfocused.data.viewmodel.SignInFocusedVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSigninfocus"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <ImageView android:id="@+id/imageLogovital"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_width="@dimen/_132pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_logovital}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_logovital"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearContainer"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSignIn"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{signInFocusedVM.signInFocusedModel.txtSignIn}"
+                style="@style/txtIntersemibold16" tools:text="@string/lbl_sign_in"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lbl_name"
+                android:id="@+id/textInputLayBlockinformati"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:textColorHint="@color/teal_400" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter"
+                    android:id="@+id/etBlockinformati"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@={signInFocusedVM.signInFocusedModel.etBlockinformatiValue}"
+                    android:textColor="@color/bluegray_900"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_14pxh"
+                    android:textStyle="normal" tools:text="@string/lbl_vaccinator"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_gray_400_radius_4"
+                android:drawableEnd="@drawable/img_eye"
+                android:drawablePadding="@dimen/_30pxh"
+                android:ellipsize="end"
+                android:hint="@string/lbl_password"
+                android:id="@+id/etField"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_16pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@={signInFocusedVM.signInFocusedModel.etFieldValue}"
+                android:textColorHint="@color/bluegray_500"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSignInOne"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24pxh"
+                android:layout_marginVertical="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_in2"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_sign_in2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

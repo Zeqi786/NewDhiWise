@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="editStructureProfileVM" type="com.syedzulqarnainsapplication.app.modules.editstructureprofile.data.viewmodel.EditStructureProfileVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearEditstructure"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearAppbartop"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleteal_400">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_11pxh"
+                android:layout_marginVertical="@dimen/_11pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_height="@dimen/_33pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_close"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtVaccinatorTask"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_66pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{editStructureProfileVM.editStructureProfileModel.txtVaccinatorTask}"
+                        style="@style/txtIntermedium16" tools:text="@string/msg_edit_structure"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearItems"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_200">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearDatacard"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_100"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_structure_infor"
+                    android:id="@+id/etHeading" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@={editStructureProfileVM.editStructureProfileModel.etHeadingValue}"
+                    android:textColorHint="@color/bluegray_900"
+                    style="@style/etSolid" tools:ignore="Autofill"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumntext"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/lbl_mohalla"
+                        android:id="@+id/textInputLayText"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etText"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={editStructureProfileVM.editStructureProfileModel.etTextValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_rehri_goth"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/lbl_address"
+                        android:id="@+id/textInputLayBlockCounter"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etBlockCounter"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={editStructureProfileVM.editStructureProfileModel.etBlockCounterValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_block_122"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/msg_landmark_optio"
+                        android:id="@+id/textInputLayTextOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etTextOne"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={editStructureProfileVM.editStructureProfileModel.etTextOneValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_white_mosque"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/msg_structure_numbe"
+                        android:id="@+id/textInputLayTextTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_16pxh"
+                        android:layout_marginVertical="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etTextTwo"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={editStructureProfileVM.editStructureProfileModel.etTextTwoValue}"
+                            android:textColor="@color/bluegray_101"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_10"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSaveChanges"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_158pxh"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_24pxh"
+                    android:paddingStart="@dimen/_24pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_save_changes"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_save_changes"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

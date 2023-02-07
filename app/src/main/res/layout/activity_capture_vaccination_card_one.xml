@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="captureVaccinationCardOneVM" type="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardone.data.viewmodel.CaptureVaccinationCardOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackcaptureVaccinationCard"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearCapturevaccina"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_200">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCaptureVaccinationCard"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/msg_capture_vaccina"
+                android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/msg_capture_vaccina"/>
+            <FrameLayout android:id="@+id/frameStackvaccinationsho"
+                android:layout_height="@dimen/_720pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageVaccinationsho"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_vaccinationsho}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vaccinationsho"/>
+                <LinearLayout android:id="@+id/linearRowellipsetwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_800">
+                    <ImageView android:id="@+id/imageEllipseTwo"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_24pxv"
+                        android:layout_marginStart="@dimen/_68pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_vaccinationsho}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vaccinationsho"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnellipsetwoOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_148pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_weight="0.57"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylegray_701cornerRadius">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_border_white_a700_radius_24"
+                            android:id="@+id/viewEllipseTwoOne"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_48pxh"
+                            android:layout_marginHorizontal="@dimen/_8pxh"
+                            android:layout_marginVertical="@dimen/_8pxv" android:layout_width="@dimen/_48pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/gray_701"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_68pxh"
+            android:layout_marginStart="@dimen/_68pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_48pxh"
+            app:srcCompat="@drawable/img_call" app:tint="@color/white_A700"/>
+    </FrameLayout>
+</layout>
