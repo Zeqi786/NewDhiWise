@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="editVaccinationRecordStep2SelectedTwentyoneVM" type="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyone.data.viewmodel.EditVaccinationRecordStep2SelectedTwentyoneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearEditvaccinatio"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearPickdate"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_218pxv"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_56pxh"
+            android:layout_marginTop="@dimen/_195pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnselectdate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleteal_400">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSELECTDATE"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{editVaccinationRecordStep2SelectedTwentyoneVM.editVaccinationRecordStep2SelectedTwentyoneModel.txtSELECTDATE}"
+                    style="@style/txtNotoSansmedium12" tools:text="@string/lbl_select_date2"/>
+                <Spinner android:id="@+id/spinnerGroup655"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerLists"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="7" tools:listitem="@layout/row_lists3"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowcancel"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCANCEL"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{editVaccinationRecordStep2SelectedTwentyoneVM.editVaccinationRecordStep2SelectedTwentyoneModel.txtCANCEL}"
+                    style="@style/txtNotoSansmedium12_4" tools:text="@string/lbl_cancel"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOK"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_weight="0.27"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{editVaccinationRecordStep2SelectedTwentyoneVM.editVaccinationRecordStep2SelectedTwentyoneModel.txtOK}"
+                    style="@style/txtNotoSansmedium12_5" tools:text="@string/lbl_ok"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

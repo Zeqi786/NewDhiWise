@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmohalla1RowModel" type="com.syedzulqarnainsapplication.app.modules.followuptaskone.data.model.Listmohalla1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.72" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMohalla"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listmohalla1RowModel.txtMohalla}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_mohalla"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRehriGoth"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listmohalla1RowModel.txtRehriGoth}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_rehri_goth"/>
+        </LinearLayout>
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineDivider"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_weight="0.0" android:layout_width="0dp"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCell2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_90pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.28" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmohalla1RowModel.txtAddress}"
+                style="@style/txtIntermedium12_5" tools:text="@string/lbl_address"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBlockTwelve"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmohalla1RowModel.txtBlockTwelve}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_block_12"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

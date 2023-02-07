@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchWomanSixVM" type="com.syedzulqarnainsapplication.app.modules.searchwomansix.data.viewmodel.SearchWomanSixVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnheading"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearItems"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearDatacard"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumntex"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <RadioButton
+                            android:buttonTint="@color/teal_400"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbTex"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_18pxh"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_2pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_search_by_vr_id"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_search_by_vr_id"/>
+                        <EditText
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_400_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_1234"
+                            android:id="@+id/etZipcode"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_12pxv"
+                            android:singleLine="true"
+                            android:text="@={searchWomanSixVM.searchWomanSixModel.etZipcodeValue}"
+                            android:textColorHint="@color/bluegray_900"
+                            style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnSearch"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_40pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="@dimen/_106pxh"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:paddingEnd="@dimen/_24pxh"
+                            android:paddingStart="@dimen/_24pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_search"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_search"/>
+                        <RadioButton
+                            android:buttonTint="@color/gray_500"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbText"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_24pxv"
+                            android:layout_marginEnd="@dimen/_18pxh"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_2pxv"
+                            android:singleLine="true"
+                            android:text="@string/msg_search_by_detai"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/msg_search_by_detai"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearCard"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_100"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_1_profile_found"
+                    android:id="@+id/etHeading" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@={searchWomanSixVM.searchWomanSixModel.etHeadingValue}"
+                    android:textColorHint="@color/bluegray_900"
+                    style="@style/etSolid" tools:ignore="Autofill"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowuser"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_A700">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_deep_orange_201_radius_20"
+                        android:id="@+id/btnUser"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_marginBottom="@dimen/_36pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_40pxh"
+                        android:paddingHorizontal="@dimen/_9pxh"
+                        android:paddingVertical="@dimen/_9pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_user" tools:ignore="ContentDescription"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumntextaddressone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTextaddressOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{searchWomanSixVM.searchWomanSixModel.txtTextaddressOne}"
+                            style="@style/txtIntersemibold14" tools:text="@string/lbl_shazia_ali"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtVRIDAG202519"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{searchWomanSixVM.searchWomanSixModel.txtVRIDAG202519}"
+                            style="@style/txtIntermedium12_1" tools:text="@string/lbl_vr_id_ag202519"/>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearRowvridag202519One"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtVRIDAG202519One"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{searchWomanSixVM.searchWomanSixModel.txtVRIDAG202519One}"
+                                style="@style/txtIntermedium12_3" tools:text="@string/lbl_pregnant"/>
+                            <View
+                                android:background="@drawable/rectangle_bg_gray_400_radius_2"
+                                android:id="@+id/viewEllipseOne"
+                                android:layout_height="@dimen/_4pxh"
+                                android:layout_marginBottom="@dimen/_6pxv"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_4pxh"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtVRIDAG202519Two"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{searchWomanSixVM.searchWomanSixModel.txtVRIDAG202519Two}"
+                                style="@style/txtIntermedium12_1" tools:text="@string/lbl_edd_7_6_2020"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageArrowright"
+                        android:layout_height="@dimen/_12pxh"
+                        android:layout_marginBottom="@dimen/_39pxv"
+                        android:layout_marginEnd="@dimen/_22pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_39pxv"
+                        android:layout_width="@dimen/_7pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowright_bluegray_500"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_bluegray_500"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

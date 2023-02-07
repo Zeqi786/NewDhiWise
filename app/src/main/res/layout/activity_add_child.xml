@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="addChildVM" type="com.syedzulqarnainsapplication.app.modules.addchild.data.viewmodel.AddChildVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAddchild"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearAppbartop"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleteal_400">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_11pxh"
+                android:layout_marginVertical="@dimen/_11pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_height="@dimen/_33pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_close"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtVaccinatorTask"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_102pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_weight="0.69"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{addChildVM.addChildModel.txtVaccinatorTask}"
+                        style="@style/txtIntermedium16" tools:text="@string/lbl_add_child"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearItems"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_200">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearDatacard"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <LinearLayout android:id="@+id/linearRowtext"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_100">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtText"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.53"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{addChildVM.addChildModel.txtText}"
+                        style="@style/txtIntersemibold14" tools:text="@string/lbl_chid_details"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTextOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_142pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_weight="0.47"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{addChildVM.addChildModel.txtTextOne}"
+                        style="@style/txtIntersemibold14_2" tools:text="@string/lbl_step_1_of_3"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumntextTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/lbl_child_name"
+                        android:id="@+id/textInputLayTextTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etTextTwo"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={addChildVM.addChildModel.etTextTwoValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_shahzain_ali"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/lbl_date_of_birth2"
+                        android:id="@+id/textInputLayDate"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etDate"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={addChildVM.addChildModel.etDateValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_01_04_2019"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:hint="@string/msg_sina_file_numbe2"
+                        android:id="@+id/textInputLayTextThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:textColorHint="@color/bluegray_500" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/etTextThree"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@={addChildVM.addChildModel.etTextThreeValue}"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_123"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLabelTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{addChildVM.addChildModel.txtLabelTwo}"
+                        style="@style/txtIntermedium14" tools:text="@string/lbl_gender"/>
+                    <RadioGroup android:id="@+id/rgRadiogrouptex"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_18pxh"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <RadioButton
+                            android:buttonTint="@color/teal_400"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbTex"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_width="wrap_content"
+                            android:paddingBottom="@dimen/_1pxv"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_1pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_male"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_male"/>
+                        <RadioButton
+                            android:buttonTint="@color/gray_500"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:id="@+id/rbTextFour"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_width="wrap_content"
+                            android:paddingBottom="@dimen/_1pxv"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_1pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_female"
+                            android:textColor="@color/bluegray_900"
+                            android:textFontWeight="400"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="normal" tools:text="@string/lbl_female"/>
+                    </RadioGroup>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_gray_400_radius_4"
+                        android:ellipsize="end"
+                        android:hint="@string/msg_special_conditi"
+                        android:id="@+id/etField"
+                        android:inputType="text"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_30pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@={addChildVM.addChildModel.etFieldValue}"
+                        android:textColorHint="@color/bluegray_500"
+                        style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_height="@dimen/_40pxv"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="@dimen/_86pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_24pxh"
+                android:paddingStart="@dimen/_24pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_next"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_next"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

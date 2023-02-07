@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listbcg1RowModel" type="com.syedzulqarnainsapplication.app.modules.childprofileone.data.model.Listbcg1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtBCG"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listbcg1RowModel.txtBCG}"
+            style="@style/txtInterregular14_1" tools:text="@string/lbl_bcg"/>
+        <LinearLayout android:id="@+id/linearRowdivider"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_104pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_weight="0.67" android:layout_width="0dp" android:orientation="horizontal">
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineDividerFour"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_weight="0.02" android:layout_width="0dp"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt3819"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_weight="0.98" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listbcg1RowModel.txt3819}"
+                style="@style/txtInterregular14_1" tools:text="@string/lbl_3_8_19"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

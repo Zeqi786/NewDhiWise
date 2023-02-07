@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="captureVaccinationCardTwoVM" type="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardtwo.data.viewmodel.CaptureVaccinationCardTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearCapturevaccina"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCaptureVaccinationCard"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:paddingBottom="@dimen/_19pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_19pxv" android:singleLine="true"
+            android:text="@string/msg_capture_vaccina"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/msg_capture_vaccina"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumncaptureVaccinationCardOne"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_360pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_184pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnCaptureVaccinationCardOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_18pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_capture_vaccina"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/msg_capture_vaccina"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumntext"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_9">
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtText"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_28pxh"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{captureVaccinationCardTwoVM.captureVaccinationCardTwoModel.txtText}"
+                        style="@style/txtInterregular14" tools:text="@string/msg_would_you_like"/>
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/linearRow"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_27pxv"
+                        android:layout_marginEnd="@dimen/_28pxh"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTextleft"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.53"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{captureVaccinationCardTwoVM.captureVaccinationCardTwoModel.txtTextleft}"
+                            android:textAllCaps="true"
+                            style="@style/txtIntersemibold14_3" tools:text="@string/lbl_skip"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTextleftOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_48pxh"
+                            android:layout_weight="0.47"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{captureVaccinationCardTwoVM.captureVaccinationCardTwoModel.txtTextleftOne}"
+                            android:textAllCaps="true"
+                            style="@style/txtIntersemibold14_2" tools:text="@string/lbl_yes"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

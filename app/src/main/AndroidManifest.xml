@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.syedzulqarnainsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.syedzulqarnainsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthirteen.ui.EditVaccinationRecordStep2SelectedThirteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedseventeen.ui.EditVaccinationRecordStep2SelectedSeventeenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addchild.ui.AddChildActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.filterone.ui.FilterOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.signinfocused.ui.SignInFocusedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimage.ui.CapturedImageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.mobilizationtasks.ui.MobilizationTasksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstepthree.ui.EditVaccinationRecordStepThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstepone.ui.EditVaccinationRecordStepOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addstructure.ui.AddStructureActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardone.ui.CaptureVaccinationCardOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardthree.ui.CaptureVaccinationCardThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptaskfour.ui.FollowUpTaskFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyfive.ui.EditVaccinationRecordStep2SelectedTwentyfiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecord.ui.EditVaccinationRecordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childtaskfilledtwo.ui.ChildTaskFilledTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimagetwo.ui.CapturedImageTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childprofile.ui.ChildProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedsixteen.ui.EditVaccinationRecordStep2SelectedSixteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardtwo.ui.CaptureVaccinationCardTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editstructureprofile.ui.EditStructureProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.syedzulqarnainsapplication.app.modules.signindefault.ui.SignInDefaultActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordtwo.ui.EditVaccinationRecordTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptasktwo.ui.FollowUpTaskTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimagefive.ui.CapturedImageFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.tasklist.ui.TaskListActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyfour.ui.EditVaccinationRecordStep2SelectedTwentyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.refusalbin.ui.RefusalBinActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childtaskfocused.ui.ChildTaskFocusedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthirtytwo.ui.EditVaccinationRecordStep2SelectedThirtytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyeight.ui.EditVaccinationRecordStep2SelectedTwentyeightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedfourteen.ui.EditVaccinationRecordStep2SelectedFourteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwo.ui.EditVaccinationRecordStep2SelectedTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.structureprofile.ui.StructureProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.tasklistalloptions.ui.TaskListAllOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardfive.ui.CaptureVaccinationCardFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.routinevisittasksalloptions.ui.RoutineVisitTasksAllOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.refusaltasks.ui.RefusalTasksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodefive.ui.ScanQrCodeFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.filtertwo.ui.FilterTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.tasklistone.ui.TaskListOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwoman.ui.AddWomanActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedsix.ui.EditVaccinationRecordStep2SelectedSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptaskthree.ui.FollowUpTaskThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstepsix.ui.EditVaccinationRecordStepSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.signinfocusedone.ui.SignInFocusedOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addstructuretwo.ui.AddStructureTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordone.ui.EditVaccinationRecordOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.refusaltasksallloptions.ui.RefusalTasksAlllOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthree.ui.EditVaccinationRecordStep2SelectedThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedfifteen.ui.EditVaccinationRecordStep2SelectedFifteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptaskfive.ui.FollowUpTaskFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodefour.ui.ScanQrCodeFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptaskone.ui.FollowUpTaskOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childtaskdefault.ui.ChildTaskDefaultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedeleven.ui.EditVaccinationRecordStep2SelectedElevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedeighteen.ui.EditVaccinationRecordStep2SelectedEighteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstepfour.ui.EditVaccinationRecordStepFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.tasklisttwo.ui.TaskListTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.structureprofileone.ui.StructureProfileOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthirty.ui.EditVaccinationRecordStep2SelectedThirtyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimagethree.ui.CapturedImageThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwomanthree.ui.AddWomanThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.followuptask.ui.FollowUpTaskActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthirtyfour.ui.EditVaccinationRecordStep2SelectedThirtyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimagefour.ui.CapturedImageFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodeeight.ui.ScanQrCodeEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.structureprofiletwo.ui.StructureProfileTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwomanfive.ui.AddWomanFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwenty.ui.EditVaccinationRecordStep2SelectedTwentyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childprofileone.ui.ChildProfileOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcardfour.ui.CaptureVaccinationCardFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturevaccinationcard.ui.CaptureVaccinationCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.searchchild1.ui.SearchChild1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedeight.ui.EditVaccinationRecordStep2SelectedEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selected.ui.EditVaccinationRecordStep2SelectedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodethree.ui.ScanQrCodeThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwelve.ui.EditVaccinationRecordStep2SelectedTwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.mobilizationtasksalloptions.ui.MobilizationTasksAllOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentythree.ui.EditVaccinationRecordStep2SelectedTwentythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentytwo.ui.EditVaccinationRecordStep2SelectedTwentytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.routinevisittasks.ui.RoutineVisitTasksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childtaskfilled.ui.ChildTaskFilledActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstepfive.ui.EditVaccinationRecordStepFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.childtaskfilledone.ui.ChildTaskFilledOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcode.ui.ScanQrCodeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodeone.ui.ScanQrCodeOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.filter.ui.FilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.familyprofile.ui.FamilyProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectednine.ui.EditVaccinationRecordStep2SelectedNineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordsteptwo.ui.EditVaccinationRecordStepTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedten.ui.EditVaccinationRecordStep2SelectedTenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwomantwo.ui.AddWomanTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwomanone.ui.AddWomanOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodeseven.ui.ScanQrCodeSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addchildone.ui.AddChildOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.addwomanfour.ui.AddWomanFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentynine.ui.EditVaccinationRecordStep2SelectedTwentynineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.refusalbinalloptions.ui.RefusalBinAllOptionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodetwo.ui.ScanQrCodeTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.scanqrcodesix.ui.ScanQrCodeSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedthirtythree.ui.EditVaccinationRecordStep2SelectedThirtythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectednineteen.ui.EditVaccinationRecordStep2SelectedNineteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedone.ui.EditVaccinationRecordStep2SelectedOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedtwentyseven.ui.EditVaccinationRecordStep2SelectedTwentysevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.capturedimageone.ui.CapturedImageOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.syedzulqarnainsapplication.app.modules.editvaccinationrecordstep2selectedfour.ui.EditVaccinationRecordStep2SelectedFourActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

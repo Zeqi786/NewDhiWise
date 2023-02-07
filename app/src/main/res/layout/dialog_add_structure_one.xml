@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="addStructureOneVM" type="com.syedzulqarnainsapplication.app.modules.addstructureone.data.viewmodel.AddStructureOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAddStructureO"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumn"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_245pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumngroupeightyfour"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearItems"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_24pxv"
+                    android:layout_marginEnd="@dimen/_78pxh"
+                    android:layout_marginStart="@dimen/_78pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <ImageView android:gravity="start"
+                        android:id="@+id/imageGroupEightyFour"
+                        android:layout_height="@dimen/_98pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group84"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group84"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtNoProfileFoun"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{addStructureOneVM.addStructureOneModel.txtNoProfileFoun}"
+                        style="@style/txtIntersemibold14" tools:text="@string/msg_structure_10_ad"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtNoprofilematc"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{addStructureOneVM.addStructureOneModel.txtNoprofilematc}"
+                        style="@style/txtInterregular12" tools:text="@string/msg_in_block_12_re"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnDone"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_88pxh"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_done"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_done"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

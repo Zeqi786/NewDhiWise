@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="capturedImageVM" type="com.syedzulqarnainsapplication.app.modules.capturedimage.data.viewmodel.CapturedImageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCapturedimage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_200">
+        <ImageView android:id="@+id/imageVaccinationsho"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_vaccinationsho_776x360}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vaccinationsho_776x360"/>
+        <ImageView android:id="@+id/imageClose"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_33pxh"
+            android:layout_marginBottom="@dimen/_19pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="@dimen/_33pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_close"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+        <LinearLayout android:id="@+id/linearRowarrowright"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyleteal_400cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtButtontext"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{capturedImageVM.capturedImageModel.txtButtontext}"
+                style="@style/txtIntersemibold14_1" tools:text="@string/lbl_submit"/>
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_height="@dimen/_12pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_12pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
